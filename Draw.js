@@ -81,8 +81,8 @@ Draw._cell = function(x, y, count) {
         case 4:
             this._atom(x + this.CELL/4, y + this.CELL/4);
             this._atom(x + this.CELL*3/4, y + this.CELL*3/4);
-            this._atom(x + this.CELL/4, y + this.CELL/4);
-            this._atom(x + this.CELL*3/4, y + this.CELL*3/4);
+            this._atom(x + this.CELL/4, y + this.CELL*3/4);
+            this._atom(x + this.CELL*3/4, y + this.CELL/4);
         break;
     }
 }
@@ -108,7 +108,7 @@ Draw.getPosition = function(cursorX, cursorY) {
     if (cursorY < 0 || cursorY > rectangle.height) {return null; }
 
     var cellX = Math.floor(cursorX / this.CELL);
-    var cellY = Math.floor(cursorX / this.CELL);
+    var cellY = Math.floor(cursorY / this.CELL);
 
     return [cellX, cellY];
 }

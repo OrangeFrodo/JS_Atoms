@@ -1,5 +1,5 @@
 var Game = {
-    SIZE: 6
+    SIZE: 6,
 };
 
 Game.start = function() {

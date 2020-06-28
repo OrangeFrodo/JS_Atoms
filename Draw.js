@@ -10,7 +10,7 @@ Draw.init = function () {
 
     this.CELL += this.LINE;
 
-    var size = Game.size * this.CELL + this.LINE;
+    var size = Game.SIZE * this.CELL + this.LINE;
     canvas.width = size;
     canvas.height = size;
 

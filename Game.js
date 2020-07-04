@@ -3,8 +3,7 @@ var Game = {
 };
 
 Game.start = function() {
+    Board.init();
     Draw.init();
     Player.listen();
-
-    console.log("1");
 }
